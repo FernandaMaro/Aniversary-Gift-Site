@@ -1,0 +1,101 @@
+body {
+    text-align: center;
+    font-family: 'Happy Monkey', cursive;
+    background: linear-gradient(#a2d2ff, #EFB0C9);
+    color: #ffffff;
+}
+
+h1, h2, h3, h4, p {
+    text-shadow: 0 0 1px black;
+}
+
+#us {
+   width: 150px;
+   margin-bottom: 10px;
+   object-fit: cover;
+   --_m: radial-gradient(#000 69%,#0000 70%) 84.5%/50%;
+   -webkit-mask-box-image: var(--_m);
+   clip-path: polygon(-41% 0,50% 91%, 141% 0);
+}
+
+#years {
+    background: #EFB0C9;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 0 10px 0;
+}
+
+#date {
+    margin: 0;
+    background: #EFB0C9;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gift-section {
+    margin-top: 50px;
+}
+
+.gift-title {
+    margin-bottom: 10px;
+}
+
+.gift-hint {
+    margin-top: 0;
+}
+
+#gift-img-loveu {
+    height: 250px;
+}
+
+.gift-img {
+    margin: 20px auto;
+    max-width: 400px;
+    height: 400px;
+    border: 6px solid white;
+    border-radius: 10px;
+    background-image: url("images/wrapping.jpg");
+    background-size: cover;
+}
+
+#gift-img-happy:hover {
+    background-image: url("images/heart.gif")
+}
+
+#gift-img-us:hover {
+    background-image: url("images/uscore.gif");
+    animation-name: us;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes us {
+  0% {background-image: url("images/uscore.gif")}
+  50% {background-image: url("images/uscore2.gif")}
+  100% {background-image: url("images/uscore3.gif")}
+}
+
+#gift-img-u:hover {
+    background-image: url("images/beautiful.gif");
+}
+
+#gift-img-cats:hover {
+    background-image: url("images/cats.gif");
+}
+
+#gift-img-loveu:hover {
+    background-image: url("images/loveu.gif");
+}
+
+#footer {
+    font-style: italic;
+    width: 400px;
+    margin: 40px auto 20px;
+}
